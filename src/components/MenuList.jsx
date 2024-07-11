@@ -24,29 +24,35 @@ const MenuList = ({ darkTheme, collapsed, toggleCollapse }) => {
         <Menu.Item key="home" icon={<HomeOutlined />} onClick={() => navigate("/")}>
           Home
         </Menu.Item>
-        <Menu.Item key="activity" icon={<AppstoreOutlined />} onClick={() => navigate("/activity")}>
-          Activity
-        </Menu.Item>
-        <Menu.SubMenu key="tasks" icon={<BarsOutlined />} title="Tasks">
-          <Menu.Item key="task-1">Task 1</Menu.Item>
-          <Menu.Item key="task-2">Task 2</Menu.Item>
-          <Menu.SubMenu key="subtasks" title="WIN LIMA">
+        <Menu.SubMenu key="tasks" icon={<img src="/assets/WIN.png" alt="WIN" style={{ width: '29px' }} />}title="WIN LIMA">     
+            <Menu.Item key="subtask-0" onClick={() => navigate("/subtask-0")}>MONO WIN</Menu.Item>
             <Menu.Item key="subtask-1" onClick={() => navigate("/subtask-1")}>DÚO WIN</Menu.Item>
             <Menu.Item key="subtask-2" onClick={() => navigate("/subtask-2")}>TRÍO WIN</Menu.Item>
             <Menu.Item key="subtask-3" onClick={() => navigate("/subtask-3")}>PLAN GAMER</Menu.Item>
-            <Menu.Item key="subtask-4" onClick={() => navigate("/subtask-4")}>RUC 20 Y VERISURE</Menu.Item>
-
-          </Menu.SubMenu>
+            <Menu.Item key="subtask-4" onClick={() => navigate("/subtask-4")}>RUC 20 Y VERISURE</Menu.Item>          
         </Menu.SubMenu>
-        <Menu.Item key="progress" icon={<AreaChartOutlined />} onClick={() => navigate("/progress")}>
-          Progress
-        </Menu.Item>
-        <Menu.Item key="payment" icon={<PayCircleOutlined />} onClick={() => navigate("/payment")}>
-          Payment
-        </Menu.Item>
-        <Menu.Item key="setting" icon={<SettingOutlined />} onClick={() => navigate("/setting")}>
-          Setting
-        </Menu.Item>
+        <Menu.SubMenu key="tasks2" icon={<img src="/assets/MOVISTAR.png" alt="WIN" style={{ width: '29px' }}/>} title="MOVISTAR">     
+            <Menu.Item key="subtask-0" onClick={() => navigate("/subtask-0")}>MONO WIN</Menu.Item>
+            <Menu.Item key="subtask-1" onClick={() => navigate("/subtask-1")}>DÚO WIN</Menu.Item>
+            <Menu.Item key="subtask-2" onClick={() => navigate("/subtask-2")}>TRÍO WIN</Menu.Item>
+            <Menu.Item key="subtask-3" onClick={() => navigate("/subtask-3")}>PLAN GAMER</Menu.Item>
+            <Menu.Item key="subtask-4" onClick={() => navigate("/subtask-4")}>RUC 20 Y VERISURE</Menu.Item>          
+        </Menu.SubMenu>
+        <Menu.SubMenu key="tasks3" icon={<img src="/assets/CLARO.png" alt="WIN" style={{ width: '29px' }}/>} title="CLARO">     
+            <Menu.Item key="subtask-0" onClick={() => navigate("/subtask-0")}>MONO WIN</Menu.Item>
+            <Menu.Item key="subtask-1" onClick={() => navigate("/subtask-1")}>DÚO WIN</Menu.Item>
+            <Menu.Item key="subtask-2" onClick={() => navigate("/subtask-2")}>TRÍO WIN</Menu.Item>
+            <Menu.Item key="subtask-3" onClick={() => navigate("/subtask-3")}>PLAN GAMER</Menu.Item>
+            <Menu.Item key="subtask-4" onClick={() => navigate("/subtask-4")}>RUC 20 Y VERISURE</Menu.Item>          
+        </Menu.SubMenu>
+        <Menu.SubMenu key="tasks3" icon={<img src="/assets/NUBYX.png" alt="WIN" style={{ width: '29px' }}/>}title="NUBYX">     
+            <Menu.Item key="subtask-0" onClick={() => navigate("/subtask-0")}>MONO WIN</Menu.Item>
+            <Menu.Item key="subtask-1" onClick={() => navigate("/subtask-1")}>DÚO WIN</Menu.Item>
+            <Menu.Item key="subtask-2" onClick={() => navigate("/subtask-2")}>TRÍO WIN</Menu.Item>
+            <Menu.Item key="subtask-3" onClick={() => navigate("/subtask-3")}>PLAN GAMER</Menu.Item>
+            <Menu.Item key="subtask-4" onClick={() => navigate("/subtask-4")}>RUC 20 Y VERISURE</Menu.Item>          
+        </Menu.SubMenu>
+
       </Menu>
     </>
   );

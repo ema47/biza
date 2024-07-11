@@ -1827,7 +1827,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 204
+                                                S/. 170
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
@@ -1849,7 +1849,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 138
+                                                S/. 160
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -1864,7 +1864,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 168
+                                                S/. 190
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
@@ -1886,7 +1886,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 148
+                                                S/. 170
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -1901,7 +1901,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 178
+                                                S/. 200
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
@@ -1922,7 +1922,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 158
+                                                S/. 180
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -1937,7 +1937,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 188
+                                                S/. 210
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
@@ -1958,7 +1958,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 178
+                                                S/. 200
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -1973,7 +1973,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 208
+                                                S/. 230
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
@@ -2020,7 +2020,7 @@ const Subtask1 = () => {
                         </TableContainer>
                     </Grid>
                     <Grid item xs={12} md={4}>
-                        <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1' }}>DGO BASICO</Typography>
+                        <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1' }}>DGO FULL</Typography>
                         <TableContainer component={Paper}>
                             <Table>
                                 <TableHead>
@@ -2103,9 +2103,9 @@ const Subtask1 = () => {
                     </Grid>
                     <Grid item xs={12} md={4}>
                         <Paper elevation={3} style={{ padding: '16px' }}>
-                            <Typography variant="h6">DGO BASICO
+                            <Typography variant="h6">PARRILLA - DGO FULL
                             </Typography>
-                            <img src="/assets/dgobasico.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+                            <img src="/assets/dgoFULL.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
                         </Paper>
                         <TableContainer component={Paper}>
                             <Table>
@@ -2163,8 +2163,8 @@ const Subtask1 = () => {
 
             )}
             {selectedOption === 'opcion6' && (
-                <Grid container spacing={3} style={{ width: '100%' }}>
-                    <Grid item xs={12} md={4}>
+                <Grid container spacing={2} style={{ width: '100%' }}>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
                         <TableContainer component={Paper}>
                             <Table>
@@ -2182,11 +2182,6 @@ const Subtask1 = () => {
                                             </TableButton>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
-                                            <TableButton className="promo">
-                                                PRECIO <br />PROMO
-                                            </TableButton>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
                                             <TableButton className="regular">
                                                 PRECIO <br />REGULAR
                                             </TableButton>
@@ -2196,8 +2191,9 @@ const Subtask1 = () => {
                                 <TableBody>
                                     <TableRow>
                                         <StyledTableCell align="center">
-                                            <span style={{ fontSize: '0.9em', textDecoration: 'line-through' }}>200 Mbps</span><br />
-                                            <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>400 Mbps</span><br />
+                                            <span style={{ fontSize: '1.0em', textDecoration: 'line-through' }}>200 Mbps</span><br />
+                                            <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>400 Mbps</span><br />
+                                            <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
                                             <Button
@@ -2211,22 +2207,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 114
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 124
+                                                ----------
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -2241,14 +2222,15 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 124
+                                                S/. 109
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
                                     <TableRow>
                                         <StyledTableCell align="center">
-                                            <span style={{ fontSize: '0.9em', textDecoration: 'line-through' }}>300 Mbps</span><br />
-                                            <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                                            <span style={{ fontSize: '1.0em', textDecoration: 'line-through' }}>300 Mbps</span><br />
+                                            <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                                            <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
                                             <Button
@@ -2262,22 +2244,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 104
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 114
+                                                S/. 99
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -2292,14 +2259,15 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 144
+                                                S/. 129
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
                                     <TableRow>
                                         <StyledTableCell align="center">
-                                            <span style={{ fontSize: '0.9em', textDecoration: 'line-through' }}>400 Mbps</span><br />
-                                            <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>800 Mbps</span><br />
+                                            <span style={{ fontSize: '1.0em', textDecoration: 'line-through' }}>400 Mbps</span><br />
+                                            <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>800 Mbps</span><br />
+                                            <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
                                             <Button
@@ -2313,22 +2281,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 114
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 124
+                                                S/. 109
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -2343,13 +2296,14 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 154
+                                                S/. 139
                                             </Button>
                                         </StyledTableCell>
                                     </TableRow>
                                     <TableRow>
                                         <StyledTableCell align="center">
-                                            <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                                            <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                                            <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
                                             <Button
@@ -2363,22 +2317,7 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 124
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 134
+                                                S/. 119
                                             </Button>
                                         </StyledTableCell>
                                         <StyledTableCell align="center">
@@ -2393,109 +2332,47 @@ const Subtask1 = () => {
                                                     borderRadius: '5px'
                                                 }}
                                             >
-                                                S/. 164
+                                                S/. 149
                                             </Button>
                                         </StyledTableCell>
+                                    </TableRow>
+                                    <TableRow>
+                                        <StyledTableCell align="center">
+                                            <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>1000 Mbps</span><br />
+                                            <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            <Button
+                                                style={{
+                                                    fontSize: '1em', // Reducido de 1.2em a 1em
+                                                    backgroundColor: '#ff6600',
+                                                    color: 'white',
+                                                    fontWeight: 'bold',
+                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                                                    border: 'none',
+                                                    borderRadius: '5px'
+                                                }}
+                                            >
+                                                S/. 139
+                                            </Button>
+                                        </StyledTableCell>
+                                        <StyledTableCell align="center">
+                                            <Button
+                                                style={{
+                                                    fontSize: '1em', // Reducido de 1.2em a 1em
+                                                    backgroundColor: '#fff',
+                                                    color: '#ff6600',
+                                                    fontWeight: 'bold',
+                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                                                    border: '1px solid #ff6600',
+                                                    borderRadius: '5px'
+                                                }}
+                                            >
+                                                S/. 169
+                                            </Button>
+                                        </StyledTableCell>
+                                    </TableRow>
 
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="center">
-                                            <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>1000 Mbps</span><br />
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 144
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#ff6600',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 154
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '1em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#fff',
-                                                    color: '#ff6600',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: '1px solid #ff6600',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                S/. 184
-                                            </Button>
-                                        </StyledTableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '0.7em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#321712',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                NUEVOS PLANES
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '0.7em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#321712',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                X2 PRIMEROS MESES
-                                            </Button>
-                                        </StyledTableCell>
-                                        <StyledTableCell align="center">
-                                            <Button
-                                                style={{
-                                                    fontSize: '0.7em', // Reducido de 1.2em a 1em
-                                                    backgroundColor: '#321712',
-                                                    color: 'white',
-                                                    fontWeight: 'bold',
-                                                    padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
-                                                    border: 'none',
-                                                    borderRadius: '5px'
-                                                }}
-                                            >
-                                                DEL 3er al 6to mes
-                                            </Button>
-                                        </StyledTableCell>
-
-                                    </TableRow>
                                 </TableBody>
 
                             </Table>
@@ -2505,47 +2382,7 @@ const Subtask1 = () => {
                             </Paper>
                         </TableContainer>
                     </Grid>
-                    <Grid item xs={12} md={4}>
-                        <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>WIN TV PLUS</Typography>
-                        <TableContainer component={Paper}>
-                            <Table>
-                                <TableHead>
-                                    <TableRow>
-                                        <StyledTableCell align="center">
-                                            <TableButton className="win-pro">
-                                                BENEFICIOS
-                                            </TableButton>
-                                        </StyledTableCell>
-
-                                    </TableRow>
-                                </TableHead>
-                                <TableBody>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 60 canales locales e internacionales</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Novelas, películas, kids, contenido a la carta y más</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Grabación de 5 hrs de contenido</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Disfrútalo hasta en 6 dispositivos en simultáneo (hasta 4 tv/winbox + 2 móvil/web)</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
-
-                                </TableBody>
-
-                            </Table>
-
-                        </TableContainer>
+                    <Grid item xs={12} md={6}>
                         <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712', marginTop: '10px' }}>RECORDATORIO</Typography>
                         <TableContainer component={Paper}>
                             <Table>
@@ -2566,28 +2403,12 @@ const Subtask1 = () => {
                                             <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>1000 Mbps opcional 2 MESH</span><br />
                                         </StyledTableCell>
                                     </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Por los dos primeros se le hara un descuento al WINTVPLUS</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
-                                    <TableRow>
-                                        <StyledTableCell align="left">
-                                            <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Del 3er al 6to mes se tiene un precio promocion del internet</span><br />
-                                        </StyledTableCell>
-                                    </TableRow>
                                 </TableBody>
 
                             </Table>
 
                         </TableContainer>
-                    </Grid>
-                    <Grid item xs={12} md={4}>
-                        <Paper elevation={3} style={{ padding: '16px' }}>
-                            <Typography variant="h6">WIN TV PLUS</Typography>
-                            <img src="/assets/wintvplus.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
-                        </Paper>
-                        <TableContainer component={Paper}>
+                        <TableContainer component={Paper} style={{ marginTop: '10px' }}>
                             <Table>
                                 <TableBody>
                                     <TableRow>
@@ -2606,8 +2427,10 @@ const Subtask1 = () => {
                                                 <StyledTableCell align="center">
                                                     <SettingsRemoteIcon style={{ marginRight: '8px' }} />
                                                     <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
-                                                        Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
-                                                    <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+                                                        Solicita la App FONOWIN en la post venta al
+                                                        707-3000 Opción 2, una vez se encuentre
+                                                        activo tu servicio de telefonía fija. </span><br />
+
 
                                                 </StyledTableCell>
                                             </Button>
@@ -2637,12 +2460,11 @@ const Subtask1 = () => {
                             </Table>
 
                         </TableContainer>
-
                     </Grid>
+
                 </Grid>
 
             )}
-
         </Container>
     );
 };
