@@ -69,7 +69,15 @@ const Subtask2 = () => {
       case 'opcion5':
         return '#2e9fe1'; // Color para DGO BASICO
       case 'opcion6':
-        return '#ff6600'; // Color para DGO BASICO
+        return '#212120'; // Color para DGO BASICO
+      case 'opcion7':
+        return '#212120'; // Color para DGO BASICO
+      case 'opcion8':
+        return '#212120'; // Color para DGO BASICO
+        case 'opcion9':
+        return '#212120'; // Color para DGO BASICO
+        case 'opcion10':
+        return '#212120'; // Color para DGO BASICO
       default:
         return '#321712'; // Color predeterminado
     }
@@ -104,11 +112,13 @@ const Subtask2 = () => {
           fullWidth
           style={{ color: 'white', backgroundColor: getBackgroundColor(selectedOption), padding: '1px', borderRadius: '5px' }}
         >
-
-        <MenuItem value="opcion1" style={{ color: 'white', backgroundColor: '#ff6600' }}>
+          <MenuItem value="" disabled>
+            Selecciona una opción
+          </MenuItem>
+          <MenuItem value="opcion1" style={{ color: 'white', backgroundColor: '#ff6600' }}>
             <Grid container spacing={2} style={{ width: '100%' }}>
               <Grid item xs={12} md={5}>
-                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>WIN BASICO</Typography>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>WIN BASICO</Typography>
               </Grid>
               <Grid item xs={12} md={7}>
                 <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
@@ -124,7 +134,7 @@ const Subtask2 = () => {
           <MenuItem value="opcion2" style={{ color: 'white', backgroundColor: '#ff6600' }}>
             <Grid container spacing={2} style={{ width: '100%' }}>
               <Grid item xs={12} md={5}>
-                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>WIN FULL</Typography>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>WIN PLUS</Typography>
               </Grid>
               <Grid item xs={12} md={7}>
                 <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
@@ -138,16 +148,16 @@ const Subtask2 = () => {
             </Grid>
           </MenuItem>
           <MenuItem value="opcion3" style={{ color: 'white', backgroundColor: '#2e9fe1' }}>
-          <Grid container spacing={2} style={{ width: '100%' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
               <Grid item xs={12} md={5}>
-                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO L1MAX</Typography>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO L1MAX</Typography>
               </Grid>
               <Grid item xs={12} md={7}>
                 <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
                   <Wifi style={{ marginRight: '8px' }} />
                   <Add style={{ marginRight: '8px' }} />
                   <Phone />
-                  
+
                   <Add style={{ marginRight: '8px' }} />
                   <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO L1MAX</Typography>
 
@@ -156,16 +166,16 @@ const Subtask2 = () => {
             </Grid>
           </MenuItem>
           <MenuItem value="opcion4" style={{ color: 'white', backgroundColor: '#2e9fe1' }}>
-          <Grid container spacing={2} style={{ width: '100%' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
               <Grid item xs={12} md={5}>
-                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO BASICO</Typography>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO BASICO</Typography>
               </Grid>
               <Grid item xs={12} md={7}>
                 <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
                   <Wifi style={{ marginRight: '8px' }} />
                   <Add style={{ marginRight: '8px' }} />
                   <Phone />
-                  
+
                   <Add style={{ marginRight: '8px' }} />
                   <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO BASICO</Typography>
 
@@ -174,16 +184,102 @@ const Subtask2 = () => {
             </Grid>
           </MenuItem>
           <MenuItem value="opcion5" style={{ color: 'white', backgroundColor: '#2e9fe1' }}>
-          <Grid container spacing={2} style={{ width: '100%' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
               <Grid item xs={12} md={5}>
-                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO FULL</Typography>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO FULL</Typography>
               </Grid>
               <Grid item xs={12} md={7}>
                 <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
                   <Wifi style={{ marginRight: '8px' }} />
                   <Add style={{ marginRight: '8px' }} />
                   <Phone />
-                  
+
+                  <Add style={{ marginRight: '8px' }} />
+                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO FULL</Typography>
+
+                </Box>
+              </Grid>
+            </Grid>
+          </MenuItem>
+          <MenuItem value="opcion6" style={{ color: 'white', backgroundColor: '#212120' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
+              <Grid item xs={12} md={5}>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>PLAN GAMER + WIN.tv BASICO + FONOWIN</Typography>
+              </Grid>
+              <Grid item xs={12} md={7}>
+                <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
+                  <Wifi style={{ marginRight: '8px' }} />
+                  <Add style={{ marginRight: '8px' }} />
+                  <Phone />
+                  <Add style={{ marginRight: '8px' }} />
+                  <PersonalVideoIcon />
+                </Box>
+              </Grid>
+            </Grid>
+          </MenuItem>
+          <MenuItem value="opcion7" style={{ color: 'white', backgroundColor: '#212120' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
+              <Grid item xs={12} md={5}>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>PLAN GAMER + WIN.tv PLUS + FONOWIN </Typography>
+              </Grid>
+              <Grid item xs={12} md={7}>
+                <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
+                  <Wifi style={{ marginRight: '8px' }} />
+                  <Add style={{ marginRight: '8px' }} />
+                  <Phone />
+                  <Add style={{ marginRight: '8px' }} />
+                  <PersonalVideoIcon />
+                </Box>
+              </Grid>
+            </Grid>
+          </MenuItem>
+          <MenuItem value="opcion8" style={{ color: 'white', backgroundColor: '#212120' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
+              <Grid item xs={12} md={5}>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>PLAN GAMER + DGO L1MAX + FONOWIN</Typography>
+              </Grid>
+              <Grid item xs={12} md={7}>
+                <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
+                  <Wifi style={{ marginRight: '8px' }} />
+                  <Add style={{ marginRight: '8px' }} />
+                  <Phone />
+
+                  <Add style={{ marginRight: '8px' }} />
+                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO L1MAX</Typography>
+
+                </Box>
+              </Grid>
+            </Grid>
+          </MenuItem>
+          <MenuItem value="opcion9" style={{ color: 'white', backgroundColor: '#212120' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
+              <Grid item xs={12} md={5}>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>PLAN GAMER + DGO BASICO + FONOWIN  </Typography>
+              </Grid>
+              <Grid item xs={12} md={7}>
+                <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
+                  <Wifi style={{ marginRight: '8px' }} />
+                  <Add style={{ marginRight: '8px' }} />
+                  <Phone />
+
+                  <Add style={{ marginRight: '8px' }} />
+                  <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO BASICO</Typography>
+
+                </Box>
+              </Grid>
+            </Grid>
+          </MenuItem>
+          <MenuItem value="opcion10" style={{ color: 'white', backgroundColor: '#212120' }}>
+            <Grid container spacing={2} style={{ width: '100%' }}>
+              <Grid item xs={12} md={5}>
+                <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>PLAN GAMER + DGO FULL + FONOWIN</Typography>
+              </Grid>
+              <Grid item xs={12} md={7}>
+                <Box display="flex" justifyContent="left" alignItems="left" style={{ marginTop: '1px' }}>
+                  <Wifi style={{ marginRight: '8px' }} />
+                  <Add style={{ marginRight: '8px' }} />
+                  <Phone />
+
                   <Add style={{ marginRight: '8px' }} />
                   <Typography style={{ fontWeight: 'bold', fontSize: '1rem' }}>DGO FULL</Typography>
 
@@ -2204,6 +2300,1552 @@ const Subtask2 = () => {
                           <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
                             Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
                           <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <RouterIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Solicita el cableado de 2 Mesh GRATIS (solo para el plan de 1000 Mbps)</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+
+          </Grid>
+        </Grid>
+
+      )}
+      {selectedOption === 'opcion6' && (
+        <Grid container spacing={3} style={{ width: '100%' }}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        PLAN<br />
+                        GAMER
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo">
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="regular">
+                        PRECIO <br />REGULAR
+                      </TableButton>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>350 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 124
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#ff6600',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 154
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 154
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#ff6600',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 184
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        NUEVOS PLANES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        SOLO POR 6 MESES
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+              <Paper style={{ backgroundColor: '#FF5A00', color: 'white', padding: '16px', marginBottom: '10px', marginTop: '10px', borderRadius: '50px' }}>
+                <Typography variant="h4" component="h1" align="center" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>INSTALACIÓN GRATIS
+                </Typography>
+              </Paper>
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>WIN TV BASICO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        BENEFICIOS
+                      </TableButton>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 40 canales locales e internacionales</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Grabación de 5 hrs de contenido</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Pausa y retrocede en vivo hasta 7 días</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Disfrútalo hasta en 4 dispositivos en simultáneo (hasta 2 tv/winbox + 2 móvil/web)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712', marginTop: '10px' }}>RECORDATORIO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>350 Mbps opcional 1 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>600 Mbps opcional 2 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Paper elevation={3} style={{ padding: '16px' }}>
+              <Typography variant="h6">WIN TV BASICO</Typography>
+              <img src="/assets/wintvbasico1.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+            </Paper>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <SettingsRemoteIcon style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
+                          <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <Phone style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Solicita la App FONOWIN en la post venta al
+                            707-3000 Opción 2, una vez se encuentre
+                            activo tu servicio de telefonía fija</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <RouterIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Precio del cableado Mesh:
+                            S/ 55 c/u</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+
+          </Grid>
+        </Grid>
+
+      )}
+      {selectedOption === 'opcion7' && (
+        <Grid container spacing={3} style={{ width: '100%' }}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        WIN<br />
+                        PRO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo">
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo">
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="regular">
+                        PRECIO <br />REGULAR
+                      </TableButton>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>350 Mbps</span><br />
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 124
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 134
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#ff6600',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 164
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '0.9em', color: '#ff6600', fontWeight: 'bold' }}>1000 Mbps</span><br />
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 154
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#ff6600',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 164
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#ff6600',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 194
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        NUEVOS PLANES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        X2 PRIMEROS MESES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        DEL 3er al 6to mes
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+              <Paper style={{ backgroundColor: '#FF5A00', color: 'white', padding: '16px', marginBottom: '10px', marginTop: '10px', borderRadius: '50px' }}>
+                <Typography variant="h4" component="h1" align="center" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>INSTALACIÓN GRATIS
+                </Typography>
+              </Paper>
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>WIN TV PLUS</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        BENEFICIOS
+                      </TableButton>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 60 canales locales e internacionales</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Novelas, películas, kids, contenido a la carta y más</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Grabación de 5 hrs de contenido</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Disfrútalo hasta en 6 dispositivos en simultáneo (hasta 4 tv/winbox + 2 móvil/web)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712', marginTop: '10px' }}>RECORDATORIO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>350 Mbps opcional 1 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>600 Mbps opcional 2 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Por los dos primeros se le hara un descuento al WIN.tv PLUS</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Del 3er al 6to mes se tiene un precio promocion del internet</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Paper elevation={3} style={{ padding: '16px' }}>
+              <Typography variant="h6">WIN TV PLUS</Typography>
+              <img src="/assets/wintvplus.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+            </Paper>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <SettingsRemoteIcon style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
+                          <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <Phone style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Solicita la App FONOWIN en la post venta al
+                            707-3000 Opción 2, una vez se encuentre
+                            activo tu servicio de telefonía fija.</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <RouterIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Precio del cableado Mesh:
+                            S/ 55 c/u</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+
+          </Grid>
+        </Grid>
+
+      )}
+      {selectedOption === 'opcion8' && (
+        <Grid container spacing={3} style={{ width: '100%' }}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        WIN<br />
+                        PRO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo" style={{ backgroundColor: '#2e9fe1' }}>
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="regular">
+                        PRECIO <br />REGULAR
+                      </TableButton>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>350 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 158
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 188
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 188
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 218
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        NUEVOS PLANES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        SOLO POR 6 MESES
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+              <Paper style={{ backgroundColor: '#2e9fe1', color: 'white', padding: '16px', marginBottom: '10px', marginTop: '10px', borderRadius: '50px' }}>
+                <Typography variant="h4" component="h1" align="center" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>INSTALACIÓN GRATIS
+                </Typography>
+              </Paper>
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1' }}>D GO L1MAX</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro" style={{ backgroundColor: '#2e9fe1' }}>
+                        BENEFICIOS
+                      </TableButton>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 18 canales en vivo para DGO Plan L1MAX</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 60 canales en vivo para DGO Plan BASICO</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 85 canales en vivo para DGOFull</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>02 Dispositivos en simultáneo (DGO L1MAX y BASICO)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>04 Dispositivos en simultáneo DGO FULL</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Con DGO podras crear hasta 5 perfiles</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Retroceder la programacion en curso *Aplica para DGO Full. No aplica para canales Premium (Liga 1 Max)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1', marginTop: '10px' }}>RECORDATORIO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>350 Mbps opcional 1 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>600 Mbps opcional 2 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Paper elevation={3} style={{ padding: '16px' }}>
+              <Typography variant="h6">D GO L1MAX</Typography>
+              <img src="/assets/dgol1max.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+            </Paper>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <SettingsRemoteIcon style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
+                          <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <Phone style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Solicita la App FONOWIN en la post venta al
+                            707-3000 Opción 2, una vez se encuentre
+                            activo tu servicio de telefonía fija.</span><br />
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <RouterIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Solicita el cableado de 2 Mesh GRATIS (solo para el plan de 1000 Mbps)</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+
+          </Grid>
+        </Grid>
+
+      )}
+      {selectedOption === 'opcion9' && (
+        <Grid container spacing={3} style={{ width: '100%' }}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        WIN<br />
+                        PRO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo" style={{ backgroundColor: '#2e9fe1' }}>
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="regular">
+                        PRECIO <br />REGULAR
+                      </TableButton>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>350 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 158
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 188
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 188
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 218
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        NUEVOS PLANES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        SOLO POR 6 MESES
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+              <Paper style={{ backgroundColor: '#2e9fe1', color: 'white', padding: '16px', marginBottom: '10px', marginTop: '10px', borderRadius: '50px' }}>
+                <Typography variant="h4" component="h1" align="center" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>INSTALACIÓN GRATIS
+                </Typography>
+              </Paper>
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1' }}>DGO BASICO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro" style={{ backgroundColor: '#2e9fe1' }}>
+                        BENEFICIOS
+                      </TableButton>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 18 canales en vivo para DGO Plan L1MAX</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 60 canales en vivo para DGO Plan BASICO</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 85 canales en vivo para DGOFull</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>02 Dispositivos en simultáneo (DGO L1MAX y BASICO)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>04 Dispositivos en simultáneo DGO FULL</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Con DGO podras crear hasta 5 perfiles</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Retroceder la programacion en curso *Aplica para DGO Full. No aplica para canales Premium (Liga 1 Max)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1', marginTop: '10px' }}>RECORDATORIO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+
+                <TableBody>
+
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>350 Mbps opcional 1 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>600 Mbps opcional 2 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Paper elevation={3} style={{ padding: '16px' }}>
+              <Typography variant="h6">DGO BASICO
+              </Typography>
+              <img src="/assets/dgobasico.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+            </Paper>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <SettingsRemoteIcon style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
+                          <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <Phone style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Solicita la App FONOWIN en la post venta al
+                            707-3000 Opción 2, una vez se encuentre
+                            activo tu servicio de telefonía fija </span><br />
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <RouterIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em', fontWeight: 'bold' }}>Solicita el cableado de 2 Mesh GRATIS (solo para el plan de 1000 Mbps)</span><br />
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+
+          </Grid>
+        </Grid>
+
+      )}
+       {selectedOption === 'opcion10' && (
+        <Grid container spacing={3} style={{ width: '100%' }}>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#321712' }}>Tabla de precios</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro">
+                        PLAN<br />
+                        GAMER
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="promo" style={{ backgroundColor: '#2e9fe1' }}>
+                        PRECIO <br />PROMO
+                      </TableButton>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <TableButton className="regular">
+                        PRECIO <br />REGULAR
+                      </TableButton>
+                    </StyledTableCell>
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                 
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>350 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 180
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 210
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <span style={{ fontSize: '1.2em', color: '#ff6600', fontWeight: 'bold' }}>600 Mbps</span><br />
+                      <span style={{ fontSize: '0.8em' }}>DE VELOCIDAD</span>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#2e9fe1',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 210
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '1em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#fff',
+                          color: '#2e9fe1',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: '1px solid #ff6600',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        S/. 240
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        NUEVOS PLANES
+                      </Button>
+                    </StyledTableCell>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#321712',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        SOLO POR 6 MESES
+                      </Button>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+              <Paper style={{ backgroundColor: '#2e9fe1', color: 'white', padding: '16px', marginBottom: '10px', marginTop: '10px', borderRadius: '50px' }}>
+                <Typography variant="h4" component="h1" align="center" style={{ fontWeight: 'bold', fontSize: '1.5rem' }}>INSTALACIÓN GRATIS
+                </Typography>
+              </Paper>
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1' }}>DGO FULL</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableHead>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <TableButton className="win-pro" style={{ backgroundColor: '#2e9fe1' }}>
+                        BENEFICIOS
+                      </TableButton>
+                    </StyledTableCell>
+
+                  </TableRow>
+                </TableHead>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 18 canales en vivo para DGO Plan L1MAX</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 60 canales en vivo para DGO Plan BASICO</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Más de 85 canales en vivo para DGOFull</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>02 Dispositivos en simultáneo (DGO L1MAX y BASICO)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>04 Dispositivos en simultáneo DGO FULL</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Con DGO podras crear hasta 5 perfiles</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <PersonalVideoIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>Retroceder la programacion en curso *Aplica para DGO Full. No aplica para canales Premium (Liga 1 Max)</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+            <Typography variant="h4" align="center" gutterBottom style={{ fontWeight: 'bold', color: '#2e9fe1', marginTop: '10px' }}>RECORDATORIO</Typography>
+            <TableContainer component={Paper}>
+              <Table>
+
+                <TableBody>
+                
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>350 Mbps opcional 1 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="left">
+                      <BookmarkIcon style={{ marginRight: '8px' }} />  <span style={{ fontSize: '1em' }}>1000 Mbps opcional 2 MESH</span><br />
+                    </StyledTableCell>
+                  </TableRow>
+                </TableBody>
+
+              </Table>
+
+            </TableContainer>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Paper elevation={3} style={{ padding: '16px' }}>
+              <Typography variant="h6">PARRILLA - DGO FULL
+              </Typography>
+              <img src="/assets/dgoFULL.png" alt="Descripción de la imagen" style={{ width: '100%' }} />
+            </Paper>
+            <TableContainer component={Paper}>
+              <Table>
+                <TableBody>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <SettingsRemoteIcon style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                            Llévate 1 WINBOX a S/ 15 mensuales Máx. 2 unidades por cliente. </span><br />
+                          <span style={{ fontSize: '0.8em', fontWeight: 'bold' }}>Sujeto a evaluación crediticia</span>
+
+                        </StyledTableCell>
+                      </Button>
+                    </StyledTableCell>
+                  </TableRow>
+                  <TableRow>
+                    <StyledTableCell align="center">
+                      <Button
+                        style={{
+                          fontSize: '0.7em', // Reducido de 1.2em a 1em
+                          backgroundColor: '#FF5A00',
+                          color: 'white',
+                          fontWeight: 'bold',
+                          padding: '5px 10px', // Reducido de 10px 20px a 5px 10px
+                          border: 'none',
+                          borderRadius: '5px'
+                        }}
+                      >
+                        <StyledTableCell align="center">
+                          <Phone style={{ marginRight: '8px' }} />
+                          <span style={{ fontSize: '1em', fontWeight: 'bold' }}>
+                          Solicita la App FONOWIN en la post venta al
+707-3000 Opción 2, una vez se encuentre
+activo tu servicio de telefonía fija. </span><br />
 
                         </StyledTableCell>
                       </Button>
